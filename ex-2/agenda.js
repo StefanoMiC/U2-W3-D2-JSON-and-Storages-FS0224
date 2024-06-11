@@ -26,7 +26,7 @@ const generateAlert = () => {
 };
 
 const removeCard = event => {
-  const card = event.currentTarget; // ricaviamo l'esatto elemento cliccato attraverso l'oggetto event
+  const card = event.currentTarget;
   const existingAppointments = JSON.parse(localStorage.getItem("events-memory")); // otteniamo l'array di oggetti
   // confrontare l'attributo data-eventname con la proprietà eventName sull'oggetto
   // gli attributi chiamati data-* si possono leggere facilmente usando la proprietà .dataset sul nodo
@@ -47,7 +47,8 @@ const removeCard = event => {
     }
 
     // a questo punto, dopo aver gestito il localStorage rimuoviamo anche l'elemento dal DOM
-    card.parentNode.remove();
+    // card.parentNode.remove();
+    card.closest(".col").remove();
   }
 };
 

@@ -5,6 +5,9 @@
 // .setItem(key, value) --> questo metodo salverà il valore nella chiave corrispondente all'interno dell'area di memoria del browser dedicata
 // .getItem(key) --> cercherà un elemento con una particolare chiave, se la trova ritorna il valore associato e se non la troverà ritornerà null
 
+// .removeItem(key) --> rimuove uno specifico elemento con quella particolare chiave
+// .clear() --> rimuove tutti i dati dello storage del dominio corrente
+
 // i valori ritornati dallo STORAGE sono SEMPRE STRINGHE!
 
 // .removeItem(key) --> rimuoverà l'elemento corrispondente a quella chiave
